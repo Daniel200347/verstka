@@ -1,0 +1,245 @@
+body {
+    background-color: #0D0D11;
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 40px;
+    padding-left: 34px;
+}
+
+.menu__list-item {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+
+}
+
+.menu__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__balance {
+    font-size: 13.9557px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: #1B1B28;
+    border-radius: 5.81489px;
+    padding: 6px 12px;
+}
+
+.menu__list-item--language {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.menu__list-item--language:focus-within .menu__list-arrow-down, .menu__list-item--language:hover .menu__list-arrow-down {
+    transition: 160ms;
+    transform: rotate(180deg);
+
+}
+
+.language-list {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    left: 0px;
+    bottom: 0px;
+    transform: translateY(100%);
+    transition: 160ms
+}
+
+.language-list__item {
+    text-decoration: none;
+    color: white;
+}
+
+.menu__list-item--language:focus-within .language-list, .menu__list-item--language:hover .language-list {
+    opacity: 1;
+    pointer-events: all;
+
+
+}
+
+.referals {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 3fr;
+    gap: 97px;
+}
+
+.referals-panel {
+    background: #0A0A0D;
+    border-radius: 20.4px;
+    margin-top: 87px;
+    padding-top: 30px;
+}
+
+.referals-panel__button {
+    display: flex;
+    padding: 14px;
+}
+
+.referals-panel__button:last-child {
+    margin-bottom: 20px;
+}
+
+.referals-panel__button-hover:hover {
+    background: #343444;
+    border-radius: 15px;
+}
+
+.referals-panel__button--image {
+    padding-right: 14px;
+    padding-left: 38px;
+}
+
+.referals-panel__button--text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #878994;
+}
+
+.referals-menu {
+    display: grid;
+}
+
+.referals-menu__title {
+    margin-top: 90px;
+    display: flex;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.referals-menu__container {
+    margin-top: 40px;
+}
+
+.referals-menu__container--band {
+    width: 255px;
+}
+
+.referals-menu__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #EBEBEB;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 40px;
+}
+
+.referals-menu__text-color {
+    color: #5142FC;
+}
+
+.referals-menu__container--input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #343444;
+    border-radius: 8px;
+    margin-right: 46px;
+}
+
+.referals-menu__container--list {
+    color: #8A8AA0;
+    background: none;
+    padding-left: 20px;
+}
+
+.referals-menu__container--clip {
+    padding-right: 18px;
+}
+
+.referals-menu__button {
+    margin-top: 34px;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 56px;
+    background: none;
+    padding: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.referals-menu__button-hover:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 0px 2px #b0acff;
+}
+
+
+.basement {
+    margin-top: 250px;
+    background: #0A0A0D;
+}
+
+.footer-menu {
+    padding-top: 60px;
+    padding-bottom: 66px;
+    background: #0A0A0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-menu__list {
+    display: flex;
+    gap: 40px;
+}
+
+
+.footer-menu__copyrate {
+    font-size: 12px;
+    line-height: 18px;
+    font-feature-settings: 'liga' off;
+    color: #838383;
+    opacity: 0.6;
+}

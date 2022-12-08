@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <nav class="menu">
+            <a class="menu__logo" href="index.html">
+                <img src="public/main/header/logo.svg" alt="логотип" class="item">
+            </a>
+            <ul class="menu__list">
+                <li><a href="index.html" class="menu__list-item">Главная</a></li>
+                <li><a href="pages/rules.html" class="menu__list-item">Правила</a></li>
+                <li><a href="pages/help.html" class="menu__list-item">Поддержка</a></li>
+                <li class="menu__list-item--language">
+                    <a href="#" class="menu__list-item ">Язык</a>
+                    <img class="menu__list-arrow-down" src="public/main/header/arrow-down.svg" alt="#">
+                    <ul class="language-list">
+                        <li>
+                            <a class="language-list__item" href="#">Русский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Украинский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Воронежский</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="menu__buttons">
+                <a href="./pages/login.html"
+                   class="button button-secondary menu__login-active">Войти</a>
+                <a href="pages/registration.html"
+                   class="button button-primary menu__registration-active">Регистрация</a>
+            </div>
+        </nav>
+
+    </header>
+    <section class="greetings">
+        <h1 class="greetings__text">Добро пожаловать,
+            в <span class="greetings__text-color"> CRYPTO</span> игру нового
+            поколения!</h1>
+        <img class="greetings__image" src="public/main/greetings/cosmo.png" alt="#">
+    </section>
+    <section class="description">
+        <div class="info">
+            <h1 class="info__title">CRYPTO ROCKET</h1>
+            <span class="info__text">Первая CRYPTO-игра, в которой каждый зарабатывает за участие! Приглашайте
+                    друзей,
+                    открывайте новые <br> уровни и
+                    делитесь своими результатами!</span>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card__book">
+                    <img src="public/main/greetings/book.svg" alt="#">
+                </div>
+                <span class="card__text">Каждый игрок получит от 195% прибыли в каждом уровне, после активации! <a
+                        href="#" class="card__text-color"> Перейти к уровням.</a></span>
+            </div>
+            <div class="card">
+                <div class="card__book">
+                    <img src="public/main/greetings/book.svg" alt="#">
+                </div>
+                <span class="card__text">Приглашайте Ваших друзей и знакомых и получайте дополнительный доход в
+                        размере
+                        —
+                        25%
+                        от пополнений Ваших рефералов.</span>
+            </div>
+            <div class="card">
+                <div class="card__book">
+                    <img src="public/main/greetings/book.svg" alt="#">
+                </div>
+                <span class="card__text">Если у Вас возникли проблемы во время игры, пожалуйста, перейдите на
+                        вкладку
+                        <a href="#" class="card__text-color">«Поддержка»</a> и свяжитесь с нами как можно скорее.
+                    </span>
+            </div>
+
+        </div>
+        <div class="cards cards-second-row">
+            <div class="card">
+                <div class="card__book">
+                    <img src="public/main/greetings/book.svg" alt="#">
+                </div>
+                <span class="card__text">После получения 3-х выплат уровень автоматически закроется. Для
+                        возобновления
+                        участия в уровне необходимо заново приобрести доступ к уровню.
+                    </span>
+            </div>
+            <div class="card">
+                <div class="card__book">
+                    <img src="public/main/greetings/book.svg" alt="#">
+                </div>
+                <span class="card__text">Пополнение и вывод средств в игре происходит в USDT TRC20. Это гарантирует
+                        безопасность переводов и отсутствие колебаний курса.
+                    </span>
+            </div>
+
+            <div class="card">
+                <div class="card__book">
+                    <img src="public/main/greetings/book.svg" alt="#">
+                </div>
+                <span class="card__text">Перед началом игры мы рекомендуем подробно ознакомиться с правилами игры.
+                        Для
+                        этого необходимо перейти на вкладку <a href="#" class="card__text-color"> «Правила»</a>.
+                    </span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="./pages/registration.html" class="button button-primary buttons__create-account">
+                Создать аккаунт
+            </a>
+            <a href="./pages/help.html" class="button button-secondary buttons__help">
+                Помощь
+            </a>
+        </div>
+    </section>
+    <div class="levels__title">
+        <span>Уровни</span>
+    </div>
+    <div class="levels" data-levels-container>
+    </div>
+    <section class="stats">
+        <span class="stats__title">Статистика Игры</span>
+        <div class="stats__cards">
+            <div class="stats__card">
+                <p class="stats__description">ВСЕГО ИГРОКОВ</p>
+                <span class="stats__amount">10,000</span>
+            </div>
+            <div class="stats__card">
+                <p class="stats__description">КОЛИЧЕСТВО ТРАНЗАКЦИЙ</p>
+                <span class="stats__amount">10,000</span>
+            </div>
+            <div class="stats__card">
+                <p class="stats__description">СУММА ВЫПЛАТ</p>
+                <span class="stats__amount">10,000</span>
+            </div>
+        </div>
+        <span class="stats__text">Мы можем активировать новые уровни в любой момент, следите за обновлениями в Telegram.</span>
+    </section>
+    <section class="payments">
+        <span class="payments-title">Последние выплаты</span>
+        <div class="payments__table">
+            <div class="payments__table--title">
+                <span>ВРЕМЯ</span>
+                <span>КОШЕЛЁК</span>
+                <span>СУММА</span>
+
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+            <div class="payments__table--elements">
+                <span class="payments__table--time">12:30</span>
+                <a href="MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi" class="payments__table--link">MV8ztbZSdrMN9bQpPnjEzNkqikuv7akxPi</a>
+                <span class="payments__table--amount">$ 120.00 USDT</span>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <span class="team__title">Наша команда</span>
+        <div class="team__cards">
+            <div class="team__card">
+                <img src="public/main/team/human1.png" alt="">
+                <span class="team__name">Denis Vlasov</span>
+                <span class="team__job">Team leader</span>
+            </div>
+            <div class="team__card">
+                <img src="public/main/team/human2.png" alt="">
+                <span class="team__name">Nikolay Novak</span>
+                <span class="team__job">CODE TEAM</span>
+            </div>
+            <div class="team__card">
+                <img src="public/main/team/human3.png" alt="">
+                <span class="team__name">Damir Leonov</span>
+                <span class="team__job">CODE TEAM</span>
+            </div>
+        </div>
+    </section>
+    <section class="invitation">
+        <div class="invitation__container">
+            <span class="invitation__title">Присоединяйтесь к Telegram</span>
+            <span class="invitation__text">Общайтесь с другими участниками и узнавайте больше!</span>
+        </div>
+        <div class="invitation__button">
+            <a href="./pages/registration.html" class="button-primary button">Присоединиться</a>
+        </div>
+    </section>
+</div>
+<footer class="basement">
+    <div class="container">
+        <nav class="footer-menu">
+            <a class="footer-menu__logo" href="./index.html">
+                <img src="./public/main/header/logo.svg" alt="логотип" class="item">
+            </a>
+            <ul class="footer-menu__list">
+                <li><a href="./index.html" class="menu__list-item">Главная</a></li>
+                <li><a href="./pages/rules.html" class="menu__list-item">Правила</a></li>
+                <li><a href="./pages/help.html" class="menu__list-item">Поддержка</a></li>
+                <li class="menu__list-item--language">
+                    <a href="#" class="menu__list-item ">Язык</a>
+                    <img class="menu__list-arrow-down" src="./public/main/header/arrow-down.svg" alt="#">
+                    <ul class="language-list">
+                        <li>
+                            <a class="language-list__item" href="#">Русский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Украинский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Воронежский</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <span class="footer-menu__copyrate">© 2022 CryptoRocket. All rights reserved.</span>
+        </nav>
+    </div>
+</footer>
+
+<script src="src/levels.js">
+
+</script>
+
+</body>
+
+</html>

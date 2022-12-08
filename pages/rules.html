@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="../normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/rules.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav class="menu">
+            <a class="menu__logo" href="../index.html">
+                <img
+                        src="../public/main/header/logo.svg"
+                        alt="логотип"
+                        class="item"
+                />
+            </a>
+            <ul class="menu__list">
+                <li><a href="../index.html" class="menu__list-item">Главная</a></li>
+                <li>
+                    <a href="../pages/rules.html" class="menu__list-item">Правила</a>
+                </li>
+                <li>
+                    <a href="../pages/help.html" class="menu__list-item">Поддержка</a>
+                </li>
+                <li class="menu__list-item--language">
+                    <a href="#" class="menu__list-item">Язык</a>
+                    <img
+                            class="menu__list-arrow-down"
+                            src="../public/main/header/arrow-down.svg"
+                            alt="#"
+                    />
+                    <ul class="language-list">
+                        <li>
+                            <a class="language-list__item" href="#">Русский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Украинский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Воронежский</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="menu__buttons">
+                <a
+                        href="../pages/login.html"
+                        class="button button-secondary menu__login-active"
+                >Войти</a
+                ><a
+                    href="../pages/registration.html"
+                    class="button button-primary menu__registration-active"
+            >Регистрация</a
+            >
+            </div>
+        </nav>
+    </header>
+    <section class="rules">
+        <span class="rules__title">Правила</span>
+        <div class="rules__container">
+            <span class="rules__paragraph">1. Регистрация</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >Регистрация в игре возможна только по адресу вашего кошелька USDT
+              TRC20, который будет использоваться для вывода средств. Его
+              невозможно будет изменить в будущем. Пожалуйста, уберитесь, что Вы
+              используете кошелёк, к которому есть доступ, перед пополнением
+              баланса.</span
+            >
+            </div>
+            <span class="rules__paragraph">2. Пополнение баланса</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >Пополнение и вывод средств в игре возможен только в стейблкоине
+              Tether (USDT), в сети TRC20. В случае отправки других криптовалют,
+              средства не будут зачислены на Ваш игровой баланс.</span
+            >
+            </div>
+            <span class="rules__paragraph">3. Активация уровней</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >Все уровни отображаются на главной странице и в Вашем личном
+              кабинете. Для активации необходимо нажать кнопку «активировать» и
+              оплатить сумму, согласно стоимости уровня. После подтверждения
+              оплаты, уровень будет активирован и Вы начнёте получать доход,
+              согласно % Вашего уровня. Если Вы оплачиваете уровень, с Вашего
+              игрового баланса, он будет активирован моментально.</span
+            >
+            </div>
+            <span class="rules__paragraph">4. Получения дохода</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >При активации уровня, Вы можете ознакомиться с условиями (%
+              дохода и % реферального). После активации Вы получите 3 выплаты,
+              согласно % доходности уровня. После получения 3 выплат, уровень
+              автоматически закроется. Вы будете получать реферальный % с
+              каждого привлеченного игрока, вне зависимости от того активен ли
+              сейчас уровень.</span
+            >
+            </div>
+            <span class="rules__paragraph">5. Повторная активация</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >уровня Если Вы хотите и дальше получать доход (после закрытия
+              уровня), Вам необходимо активировать его снова, оплатив стоимость
+              уровня. Количество повторных активаций уровня не ограничено.</span
+            >
+            </div>
+            <span class="rules__paragraph">6. Реферальная ссылка</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >Для получения вознаграждения с
+              привлеченного игрока, необходимо купить доступ к тому столу с
+              которого должно быть зачисление реферального % от одного
+              раза.</span
+            >
+            </div>
+            <span class="rules__paragraph">7. Вывод средств</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >Вывод средств с Вашего игрового баланса возможен
+              только на кошелёк USDT TRC-20, который вы указали при регистрации.
+              Для этого необходимо перейти на вкладку «Вывод» в личном кабинете
+              и выбрать желаемую сумму, которая не превышает игровой баланс.
+              Комиссия за вывод - 1$.</span
+            >
+            </div>
+            <span class="rules__paragraph">8. Уведомления</span>
+            <div class="rules__wrapper">
+            <span class="rules__text"
+            >Ваш игровой баланс обновляется в режиме реального
+              времени, в личном кабинете на сайте. Если Вы хотите получать
+              уведомления о всех зачислениях, можете перейти во вкладку
+              «Уведомления» в личном кабинете и включить уведомления в
+              телеграмм-бот.</span
+            >
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="basement">
+    <div class="container">
+        <nav class="footer-menu">
+            <a class="footer-menu__logo" href="../index.html">
+                <img src="../public/main/header/logo.svg" alt="логотип" class="item">
+            </a>
+            <ul class="footer-menu__list">
+                <li><a href="../index.html" class="menu__list-item">Главная</a></li>
+                <li><a href="../pages/rules.html" class="menu__list-item">Правила</a></li>
+                <li><a href="../pages/help.html" class="menu__list-item">Поддержка</a></li>
+                <li class="menu__list-item--language">
+                    <a href="#" class="menu__list-item ">Язык</a>
+                    <img class="menu__list-arrow-down" src="../public/main/header/arrow-down.svg" alt="#">
+                    <ul class="language-list">
+                        <li>
+                            <a class="language-list__item" href="#">Русский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Украинский</a>
+                        </li>
+                        <li>
+                            <a class="language-list__item" href="#">Воронежский</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <span class="footer-menu__copyrate">© 2022 CryptoRocket. All rights reserved.</span>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
